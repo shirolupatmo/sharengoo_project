@@ -1,0 +1,29 @@
+/* CSS used here will be applied after bootstrap.css */
+
+body { 
+height: 100%;
+ background: url('../images/sharengoo-bg2.jpg') no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.panel-default {
+ opacity: 0.85;
+ margin-top:30%;
+ box-shadow: 0px 0px 0px 7px #CCCCCC;
+ /*position: relative;*/
+}
+
+.panel-heading{
+	text-align: center;
+}
+
+.form-group.last {
+ margin-bottom:0px;
+}
+
+.title-login {
+	text-shadow: 0px 1px 1px #555;
+}

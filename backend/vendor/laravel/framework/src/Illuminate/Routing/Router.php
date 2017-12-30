@@ -988,22 +988,12 @@ class Router implements RegistrarContract, BindingRegistrar
         return false;
     }
 
-    /**
-     * Determine if the current route action matches a given action.
-     *
-     * @param  string  $action
-     * @return bool
-     */
     public function currentRouteUses($action)
     {
         return $this->currentRouteAction() == $action;
     }
 
-    /**
-     * Register the typical authentication routes for an application.
-     *
-     * @return void
-     */
+
     public function auth()
     {
         // Authentication Routes...
@@ -1022,12 +1012,6 @@ class Router implements RegistrarContract, BindingRegistrar
         $this->post('password/reset', 'Auth\ResetPasswordController@reset');
     }
 
-    /**
-     * Set the unmapped global resource parameters to singular.
-     *
-     * @param  bool  $singular
-     * @return void
-     */
     public function singularResourceParameters($singular = true)
     {
         ResourceRegistrar::singularParameters($singular);
